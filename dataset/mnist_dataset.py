@@ -50,8 +50,12 @@ def setup_mnist(data_path, output_path, data_organizations):
     test_labels = MNISTraw2numpy(str(raw_path / "t10k-labels-idx1-ubyte"))
 
     # Split arrays into the number of organizations
-    train_images_folds = np.split(train_images, n_clients)
-    train_labels_folds = np.split(train_labels, n_clients)
+    # For the training data, we split the data according to the label,
+    # to mimic different data distribution between organizations
+    # For testing, data is split uniformly between organizations
+    masks = [train_labels%n_clients == i for i in range(n_clients)]
+    train_images_folds = [train_images[masks[i]] for i in range(n_clients)]
+    train_labels_folds = [train_labels[masks[i]] for i in range(n_clients)]
     test_images_folds = np.split(test_images, n_clients)
     test_labels_folds = np.split(test_labels, n_clients)
 
