@@ -4,11 +4,6 @@ This dataset is [THE MNIST DATABASE of handwritten digits](http://yann.lecun.com
 
 The target is the number (0 -> 9) represented by the pixels.
 
-## Data repartition
-
-### Train and test
-
-### Split data between organizations
 
 ## Opener usage
 
