@@ -1,7 +1,12 @@
-# Materials for Substra workshop
+# Materials for Substra workshops
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Substra/substra-workshops/main?labpath=Introduction%20to%20Federated%20Learning%20with%20Substra.ipynb)
 
 This repository contains all materials to follow along the Substra hands-on workshop.
+
+## How to run the workshop with Binder
+
+Click on the Binder at the top. It will open the notebook in an interactive environment.
 
 ## How to run the workshop locally
 
