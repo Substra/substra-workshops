@@ -8,18 +8,25 @@ This repository contains all materials to follow along the Substra hands-on work
 
 Click on the Binder at the top. It will open the notebook in an interactive environment.
 
-## How to run the workshop locally
+> :warning: Binder resources are limited, and computations will be slow. If possible, it is recommended to clone the repo locally instead.
+
+## How to run the workshop locally (recommended)
 
 First, clone this repository.
 
 ```
 git clone git@github.com:Substra/substra-workshops.git
 ```
+or
+```
+git clone https://github.com/Substra/substra-workshops.git
+```
+
 Depending on your preferences, you can either install the requirements in a virtual env or in a conda env.
 
 * Install requirements with virtual env and pip
 
-This workshop is compatible with Python 3.8, 3.9 and 3.10.
+    This workshop is compatible with Python 3.8, 3.9 and 3.10.
 
     ```
     cd substra-workshops
